@@ -65,7 +65,7 @@ const EditNoteForm = () => {
             data={selectedNote.text}
             editor={ClassicEditor}
             config={{
-              toolbar: ['heading', '|', 'bold', 'italic', 'bulletedList', 'numberedList', 'blockQuote', 'link', 'undo', 'redo'],
+              toolbar: ['heading', '|', 'bold', 'italic', 'bulletedList', 'numberedList', 'link', 'undo', 'redo'],
             }}
             onChange={(e, editor) => { onTextChanged(e, editor); }}
           />

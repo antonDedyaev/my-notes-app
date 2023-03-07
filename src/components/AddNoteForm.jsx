@@ -58,7 +58,7 @@ const AddNoteForm = () => {
             data=""
             editor={ClassicEditor}
             config={{
-              toolbar: ['heading', '|', 'bold', 'italic', 'bulletedList', 'numberedList', 'blockQuote', 'link', 'undo', 'redo'],
+              toolbar: ['heading', '|', 'bold', 'italic', 'bulletedList', 'numberedList', 'link', 'undo', 'redo'],
             }}
             onReady={(editor) => {
               editorRef.current = editor;
