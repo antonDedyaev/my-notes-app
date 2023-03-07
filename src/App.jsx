@@ -20,7 +20,7 @@ const App = () => (
     <div className="App">
       <Routes>
         <Route
-          path="/"
+          path="/my-notes-app"
           element={(
             <>
               <AddNoteForm />
