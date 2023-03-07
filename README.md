@@ -26,3 +26,9 @@ make install
 ```sh
 make start
 ```
+### Used frameworks and tools:
+- ReactJS / Redux
+- Bootstrap / React-Bootstrap
+- CKEditor
+- React-toastify
+- GitHub Pages
