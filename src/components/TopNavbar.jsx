@@ -17,7 +17,7 @@ const TopNavbar = () => {
   };
 
   return (
-    <Navbar className="nav-top" bg="primary" variant="dark" expand="lg">
+    <Navbar className="nav-top" bg="primary" variant="dark">
       <Container className="container-top">
         <Container className="container-top-left">
           <Container className="logo">

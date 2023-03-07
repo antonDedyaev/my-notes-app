@@ -1,10 +1,23 @@
 .notes-list {
     display: flex;
     flex-direction: column;
-    margin: 100px auto;
+    margin: 50px auto;
     width: 45%;
 
     text-align: center;
+}
+
+@media (max-width: 1029px) {
+    .notes-list {
+        width: 80%;
+    }
+}
+
+@media (max-width: 349px) {
+    .notes-list {
+        margin: 0 auto;
+        width: 90%;
+    }
 }
 
 .nav-top {
@@ -12,6 +25,18 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+}
+
+.navbar {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 349px) {
+    .navbar-expand {
+        flex-wrap: wrap !important;
+    }
 }
 
 .navbar-brand {
@@ -41,8 +66,15 @@
 }
 
 .container-top {
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+@media (max-width: 349px) {
+    .container-top {
+        flex-wrap: wrap;
+    }
 }
 
 .container-top-left, .container-top-right {
@@ -51,6 +83,13 @@
 
 .container-top-right {
     align-items: flex-end;
+}
+
+@media (max-width: 349px) {
+    .container-top-right {
+        align-items: center;
+        margin: 20px;
+    }
 }
 
 .container-top-right button {
@@ -81,10 +120,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px 250px;
+    margin: 50px 250px;
     padding: 25px;
 
     border-radius: 30px;
+}
+
+@media (max-width: 1099px) {
+    .note-form {
+        margin: 50px 100px;
+    }
+}
+
+@media (max-width: 699px) {
+    .note-form {
+        margin: 50px 50px;
+    }
+}
+
+@media (max-width: 349px) {
+    .note-form {
+        margin: 20px 10px;
+    }
 }
 
 .note-form h2 {
@@ -103,7 +160,12 @@
 .note-form-elements {
     display: flex;
     flex-direction: column;
-    width: 50%;
+}
+
+@media (max-width: 669px) {
+    .note-form-elements {
+        width: 90%;
+    }
 }
 
 .note-form-elements button{
@@ -164,9 +226,15 @@
 
 .ck-editor__editable {
     min-height: 200px;
-    background-color: black;
 }
 
-.ck {
-    background-color: black;
+@media (max-width: 669px) {
+    .ck-editor__editable {
+        min-height: 100px;
+    }
+}
+
+.mode {
+    display: flex;
+    flex-flow: row nowrap;
 }

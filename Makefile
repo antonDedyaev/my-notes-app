@@ -4,5 +4,8 @@ install:
 start:
 	npm start
 
+deploy:
+	npm run deploy
+
 lint:
 	npx eslint .
